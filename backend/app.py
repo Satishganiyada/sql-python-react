@@ -36,7 +36,7 @@ def get_value():
         return jsonify({'error': str(e)}), 500
 
 @app.route('/say-hello', methods=['GET'])
-def get_value():
+def sayhello():
     return "hello from python"
 if __name__ == '__main__':
     app.run(debug=True)
